@@ -5,13 +5,10 @@ import AdvertsList from './AdvertsList'
 
 class AdvertsListContainer extends Component {
   componentDidMount() {
-    // fetch list of adverts
     this.props.fetchAdverts()
   }
 
   render() {
-
-    // 'loading' or AdvertsList(props:adverts)
     return <div>
       {!this.props.adverts ? "loading.." : <AdvertsList adverts={this.props.adverts} />}
     </div>
