@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { Provider } from 'react-redux'
 import store from './store'
 import { Route } from 'react-router-dom'
+import AdvertPageContainer from './components/AdvertPage/AdvertPageContainer'
 
 import AdvertsListContainer from './components/AdvertsList/AdvertsListContainer'
 
@@ -16,7 +17,8 @@ class App extends Component {
         <h2>
           ..it's yours for the taking.
         </h2>
-        <Route path="/" exact component={AdvertsListContainer} />
+        <Route exact path="/" component={AdvertsListContainer} />
+        <Route exact path="/adverts/:id" component={AdvertPageContainer} />
       </div>
     </Provider>
     );
