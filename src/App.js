@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <h1>
-        Buy-the-way..
+        Buy the way..
         </h1>
       <h2>
         ..it's yours for the taking.
